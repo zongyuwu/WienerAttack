@@ -27,7 +27,7 @@ class WienerExp
       d, k = v[0], v[1]
       p, q = solve_quartic(1, -(@N-(((@E*d)-1)/k)+1), @N) if ! k.zero?
       p, q = q, p if p.to_i < q.to_i
-      return p, q if @N == p.to_i*q.to_
+      return p, q if @N == p.to_i*q.to_i
       return nil, nil
     end
   
