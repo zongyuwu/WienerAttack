@@ -26,8 +26,8 @@ class WienerExp
 
       p, q = q, p if p.to_i < q.to_i
       return p,q if @N == p.to_i*q.to_i
-      return nil, nil
     end
+    return nil, nil
   
   end
 
