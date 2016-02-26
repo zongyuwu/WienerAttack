@@ -84,11 +84,7 @@ class SqrtInt
   end
 
   def self.is_square a
-    begin
-      return Math.sqrt(a).ceil == Math.sqrt(a).floor
-    rescue
-      return false
-    end
+    return sqrt(a)**2 == a
   end
 end
 

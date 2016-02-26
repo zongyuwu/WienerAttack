@@ -102,10 +102,6 @@ class SqrtInt
     end
     return begv
   end
-
-  def self.is_square a
-    return Math.sqrt(a).ceil == Math.sqrt(a).floor
-  end
 end
 
-Gen.new(1024)
+Gen.new(2048)
